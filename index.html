@@ -5,445 +5,390 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Senthur Pandian | Software Developer</title>
 
-  <!-- Bootstrap 5 CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-
-  <!-- Bootstrap Icons -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-    rel="stylesheet"
-  />
-
   <!-- Google Font -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a2f6b3f5c2.js" crossorigin="anonymous"></script>
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0">
+<body>
 
-  <!-- Navbar -->
-  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top shadow-soft">
-    <div class="container">
-      <a class="navbar-brand" href="#home">
-       Senthur Pandian
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+  <!-- ===== NAVBAR ===== -->
+  <header class="header" id="top">
+    <nav class="nav container">
+      <div class="nav__logo">
+        <i class="fas fa-code nav__logo-icon"></i>
+        <span>Senthur&nbsp;Pandian</span>
       </div>
-    </div>
-  </nav>
 
-  <!-- Hero -->
-  <section id="home">
-    <div class="container">
-      <div class="row align-items-center gy-4">
-        <div class="col-lg-7">
-          <p class="section-subtitle mb-2">Software Developer</p>
-          <h1 class="hero-title mb-3">
-            Hi, I'm <span class="hero-highlight">Senthur Pandian</span><br />
-            I build backend & web solutions.
+      <button class="nav__toggle" id="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#resume" class="nav__link">Resume</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="section hero" id="home">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <p class="section__subtitle">Software Developer</p>
+          <h1 class="hero__title">
+            Hi, I'm <span class="hero__highlight">Senthur Pandian</span><br />
+            I build backend &amp; web solutions.
           </h1>
-          <p class="hero-subtitle mb-4">
+          <p class="hero__subtitle">
             Recent B.E CSE graduate and entry-level Software Developer with hands-on
-            experience in Python, Django, SQL, and Web Technology(HTML5,CSS3,JavaScript,React js). I enjoy turning ideas
+            experience in Python, Django, SQL, and web Technologies(HTML,CSS,JavaScript). I enjoy turning ideas
             into working applications with clean, maintainable code.
           </p>
 
-          <div class="mb-4">
-            <span class="badge-tech"><i class="bi bi-terminal me-1"></i>Python & Django</span>
-            <span class="badge-tech"><i class="bi bi-layout-text-window me-1"></i>HTML · CSS · JS· React jS</span>
-            <span class="badge-tech"><i class="bi bi-diagram-3 me-1"></i>SQL & CRUD</span>
+          <div class="hero__badges">
+            <span class="badge"><i class="fas fa-terminal"></i> Python &amp; Django</span>
+            <span class="badge"><i class="far fa-window-maximize"></i> HTML · CSS · JavaScript · React js(basics)</span>
+            <span class="badge"><i class="fas fa-project-diagram"></i> SQL&amp; CRUD</span>
           </div>
 
-          <div class="d-flex flex-wrap gap-2">
-            <a href="#projects" class="btn btn-primary-custom">
-              View Projects <i class="bi bi-arrow-right ms-1"></i>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">
+              View Projects <i class="fas fa-arrow-right"></i>
             </a>
-            <a href="#contact" class="btn btn-outline-custom">
-              Contact Me <i class="bi bi-envelope ms-1"></i>
+            <a href="#contact" class="btn btn--outline">
+              Contact Me <i class="far fa-envelope"></i>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-5">
-          <div class="glow-card p-4 text-center">
-            <img src="assets/img/IMG20250706033846_BURST000_COVER.jpg" alt="Profile Placeholder" class="img-fluid rounded-circle mb-3 profile-img" />
-            <p class="snapshot-title mb-2">Snapshot</p>
-            <ul class="list-unstyled small mb-0 text-start">
-              <li class="mb-2">
-                <i class="bi bi-mortarboard me-2"></i>
-                B.E Computer Science & Engineering – PSN College, Tirunelveli
-              </li>
-              <li class="mb-2">
-                <i class="bi bi-building-check me-2"></i>
-                Machine Learning Intern – Gradwin IT (Nov 2024 – Feb 2025)
-              </li>
-              <li class="mb-2">
-                <i class="bi bi-geo-alt me-2"></i>
-                Based in Chennai, India
-              </li>
-              <li class="mb-2">
-                <i class="bi bi-trophy me-2"></i>
-                1st Prize – Engineer’s Day Quiz
-              </li>
-              <li class="mb-0">
-                <i class="bi bi-link-45deg me-2"></i>
-                <a href="https://github.com/senthur1606" target="_blank" class="link-light text-decoration-none">
-                  github.com/senthur1606
-                </a>
-              </li>
-            </ul>
+        <div class="hero__card">
+          <img src="assets/img/IMG20250706033846_BURST000_COVER.jpg" alt="Profile" class="hero__avatar" />
+          <p class="snapshot-title">SNAPSHOT</p>
+          <ul class="snapshot__list">
+            <li><i class="fas fa-graduation-cap"></i>B.E CSE – PSN College of engineering & Technology</li>
+            <li><i class="fas fa-building"></i>Machine Learning Intern – Gradwin IT (Nov 2024 – Feb 2025)</li>
+            <li><i class="fas fa-map-marker-alt"></i>Based in Tenkasi, India</li>
+            <li><i class="fas fa-trophy"></i>1st Prize – Engineer’s Day Quiz</li>
+            <li>
+              <i class="fas fa-link"></i>
+              <a href="https://github.com/senthur1606" target="_blank">github.com/senthur1606</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section section--alt" id="about">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__subtitle">About</p>
+          <h2 class="section__title">A bit about me</h2>
+        </div>
+
+        <div class="about__grid">
+          <div>
+            <p>
+              I'm a recent Computer Science graduate focused on backend development and
+              Python-based solutions. I enjoy understanding how systems work end-to-end
+              and building applications that are reliable and easy to use.
+            </p>
+            <p>
+              My experience includes developing a human sentiment analysis system using
+              RNNs and integrating it with a Django interface, as well as building CRUD
+              web applications. I like learning new tools, reading tech content, and
+              continuously improving my problem-solving skills.
+            </p>
+            <p>
+              Right now, I’m looking for an opportunity as a Python/Django or Software
+              Developer, where I can contribute to real projects, grow with the team,
+              and build meaningful products.
+            </p>
+          </div>
+
+          <div class="about__cards">
+            <article class="card">
+              <p class="card__label">Degree</p>
+              <p class="card__text">B.E – Computer Science &amp; Engineering<br />CGPA: 7.0</p>
+            </article>
+            <article class="card">
+              <p class="card__label">Location</p>
+              <p class="card__text">Tenkasi, India<br />Open to relocation</p>
+            </article>
+            <article class="card">
+              <p class="card__label">Languages</p>
+              <p class="card__text">Tamil, English</p>
+            </article>
+            <article class="card">
+              <p class="card__label">Soft Skills</p>
+              <p class="card__text">Teamwork<br />Time Management<br />Adaptability</p>
+            </article>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About -->
-  <section id="about" class="section-bg">
-    <div class="container">
-      <div class="row gy-4 align-items-start">
-        <div class="col-lg-6">
-          <p class="section-subtitle">About</p>
-          <h2 class="section-title mb-3">A bit about me</h2>
-          <p class="mb-3">
-            I'm a recent Computer Science graduate focused on backend development and
-            Python-based solutions. I enjoy understanding how systems work end-to-end
-            and building applications that are reliable and easy to use.
-          </p>
-          <p class="mb-3">
-            My experience includes developing a human sentiment analysis system using
-            RNNs and integrating it with a Django interface, as well as building CRUD
-            web applications. I like learning new tools, reading tech content, and
-            continuously improving my problem-solving skills.
-          </p>
-          <p class="mb-3">
-            Right now, I’m looking for an opportunity as a Python/Django or Software
-            Developer, where I can contribute to real projects, grow with the team,
-            and build meaningful products.
-          </p>
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__subtitle">Skills</p>
+          <h2 class="section__title">Tech stack &amp; tools</h2>
         </div>
-        <div class="col-lg-5 ms-lg-auto">
-          <div class="row g-3">
-            <div class="col-6">
-              <div class="glow-card h-100 p-3">
-                <p class="skill-category-title mb-1">Degree</p>
-                <p class="mb-0 small">
-                  B.E – Computer Science & Engineering<br />
-                  CGPA: 7.0
-                </p>
-              </div>
+
+        <div class="skills__grid">
+          <div class="card">
+            <p class="card__label">Programming</p>
+            <div class="pill-list">
+              <span class="pill">Python</span>
+              <span class="pill">Object-Oriented Programming</span>
+              <span class="pill">Problem Solving</span>
             </div>
-            <div class="col-6">
-              <div class="glow-card h-100 p-3">
-                <p class="skill-category-title mb-1">Location</p>
-                <p class="mb-0 small">
-                  Chennai, India<br />
-                  Open to relocation
-                </p>
-              </div>
+          </div>
+          <div class="card">
+            <p class="card__label">Web &amp; Backend</p>
+            <div class="pill-list">
+              <span class="pill">Django</span>
+              <span class="pill">HTML5</span>
+              <span class="pill">CSS3</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">React js(basics)</span>
             </div>
-            <div class="col-6">
-              <div class="glow-card h-100 p-3">
-                <p class="skill-category-title mb-1">Languages</p>
-                <p class="mb-0 small">Tamil, English</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="glow-card h-100 p-3">
-                <p class="skill-category-title mb-1">Soft Skills</p>
-                <p class="mb-0 small">
-                  Teamwork<br />
-                  Time Management<br />
-                  Adaptability
-                </p>
-              </div>
+          </div>
+          <div class="card">
+            <p class="card__label">Database &amp; Tools</p>
+            <div class="pill-list">
+              <span class="pill">SQL</span>
+              <span class="pill">GitHub</span>
+              <span class="pill">VS Code</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills -->
-  <section id="skills">
-    <div class="container">
-      <p class="section-subtitle">Skills</p>
-      <h2 class="section-title mb-4">Tech stack & tools</h2>
-      <div class="row gy-4">
-        <div class="col-lg-4">
-          <div class="glow-card p-3 h-100">
-            <p class="skill-category-title">Programming</p>
-            <span class="skill-pill">Python</span>
-            <span class="skill-pill">Object-Oriented Programming</span>
-            <span class="skill-pill">Problem Solving</span>
-            <span class="skill-pill">Data Structures Basics</span>
-          </div>
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__subtitle">Experience &amp; Education</p>
+          <h2 class="section__title">Where I’ve learned</h2>
         </div>
-        <div class="col-lg-4">
-          <div class="glow-card p-3 h-100">
-            <p class="skill-category-title">Web & Backend</p>
-            <span class="skill-pill">Django</span>
-            <span class="skill-pill">HTML5</span>
-            <span class="skill-pill">CSS3</span>
-            <span class="skill-pill">JavaScript</span>
-            <span class="skill-pill">React js(basics)</span>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="glow-card p-3 h-100">
-            <p class="skill-category-title">Database & Tools</p>
-            <span class="skill-pill">SQL</span>
-            <span class="skill-pill">MySQL</span>
-            <span class="skill-pill">GitHub</span>
-            <span class="skill-pill">VS Code</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Experience & Education -->
-  <section id="experience" class="section-bg">
-    <div class="container">
-      <p class="section-subtitle">Experience & Education</p>
-      <h2 class="section-title mb-4">Where I’ve learned</h2>
-      <div class="row gy-4">
-        <div class="col-lg-6">
-          <h6 class="mb-3 text-uppercase text-muted" style="letter-spacing: 0.16em;">Experience</h6>
+        <div class="timeline__wrapper">
           <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-role">Machine Learning Intern – Gradwin IT</div>
-              <div class="timeline-meta">Nov 2024 – Feb 2025 · Remote</div>
-              <p class="small mt-2 mb-1">
+            <h3 class="timeline__heading">Experience</h3>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <h4 class="timeline__role">Machine Learning Intern – Gradwin IT</h4>
+              <p class="timeline__meta">Nov 2024 – Feb 2025 · Remote</p>
+              <p class="timeline__text">
                 Built an emotion detection system using RNNs for human voice data.
-              </p>
-              <p class="small mb-0">
-                Integrated the model into a Django web app, worked with MFCC feature extraction,
-                and shared daily progress updates with the team.
+                Integrated the model into a Django web app, worked with MFCC feature
+                extraction, and shared daily progress updates with the team.
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-6">
-          <h6 class="mb-3 text-uppercase text-muted" style="letter-spacing: 0.16em;">Education</h6>
           <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-role">B.E – Computer Science & Engineering</div>
-              <div class="timeline-meta">PSN College of Engineering & Technology · 2021 – 2025</div>
-              <p class="small mt-2 mb-0">
+            <h3 class="timeline__heading">Education</h3>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <h4 class="timeline__role">B.E – Computer Science &amp; Engineering</h4>
+              <p class="timeline__meta">PSN College of Engineering &amp; Technology · 2021 – 2025</p>
+              <p class="timeline__text">
                 CGPA: 7.0 · Worked on ML and web projects, participated in tech events and coding activities.
               </p>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-role">HSC (12th) – 79% · SSLC (10th) – 69%</div>
-              <div class="timeline-meta">Sivanthi Aathithanar Hr. Sec. School · Tamil Nadu State Board</div>
-              <p class="small mt-2 mb-0">
+
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <h4 class="timeline__role">HSC – 79% · SSLC – 69%</h4>
+              <p class="timeline__meta">Sivanthi Aathithanar Hr. Sec. School · Tamil Nadu State Board</p>
+              <p class="timeline__text">
                 Built strong fundamentals in mathematics and problem solving during school.
               </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <div class="container">
-      <p class="section-subtitle">Projects</p>
-      <h2 class="section-title mb-4">Things I’ve built</h2>
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__subtitle">Projects</p>
+          <h2 class="section__title">Things I’ve built</h2>
+        </div>
 
-      <div class="row gy-4">
-        <!-- Project 1 -->
-        <div class="col-md-6">
-          <div class="project-card p-4 h-100 d-flex flex-column">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <h5 class="mb-0">Human Sentiment Sound Analysis</h5>
-              <span class="project-tag">ML · RNN · Django</span>
+        <div class="projects__grid">
+          <article class="project">
+            <div class="project__header">
+              <h3>Human Sentiment Sound Analysis</h3>
+              <span class="project__tag">ML · RNN · Django</span>
             </div>
-            <p class="small mb-3 text-muted">
+            <p class="project__text">
               Emotion detection system that classifies human voice into happy, sad, angry,
               and neutral using RNNs and MFCC feature extraction, with a Django-based
               web interface.
             </p>
-            <ul class="small mb-3">
+            <ul class="project__list">
               <li>Preprocessed audio data and extracted MFCC features.</li>
               <li>Trained an RNN model for multi-class emotion recognition.</li>
               <li>Built a Django interface for real-time audio upload and prediction.</li>
             </ul>
-            <div class="mt-auto d-flex justify-content-between align-items-center">
-              <div>
-                <span class="badge-tech">Python</span>
-                <span class="badge-tech">TensorFlow / Keras</span>
-                <span class="badge-tech">Django</span>
+            <div class="project__footer">
+              <div class="pill-list">
+                <span class="pill">Python</span>
+                <span class="pill">TensorFlow / Keras</span>
+                <span class="pill">Django</span>
               </div>
-              <a href="#" class="small text-decoration-none text-info">
-                View Code <i class="bi bi-arrow-up-right ms-1"></i>
-              </a>
+              <a href="https://github.com/senthur1606/doto" class="project__link">View Code <i class="fas fa-arrow-up-right-from-square"></i></a>
             </div>
-          </div>
-        </div>
+          </article>
 
-        <!-- Project 2 -->
-        <div class="col-md-6">
-          <div class="project-card p-4 h-100 d-flex flex-column">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <h5 class="mb-0">Task Manager – Django CRUD App</h5>
-              <span class="project-tag">Web · CRUD</span>
+          <article class="project">
+            <div class="project__header">
+              <h3>Task Manager – Django CRUD App</h3>
+              <span class="project__tag">Web · CRUD</span>
             </div>
-            <p class="small mb-3 text-muted">
+            <p class="project__text">
               A full CRUD web application that allows users to create, update,
               and manage daily tasks with authentication and a responsive UI.
             </p>
-            <ul class="small mb-3">
+            <ul class="project__list">
               <li>Implemented user registration, login, and protected views.</li>
               <li>Used Django models, forms, and class-based views for CRUD operations.</li>
-              <li>Designed a responsive layout using Bootstrap.</li>
+              <li>Designed a responsive layout using modern CSS.</li>
             </ul>
-            <div class="mt-auto d-flex justify-content-between align-items-center">
-              <div>
-                <span class="badge-tech">Django</span>
-                <span class="badge-tech">Bootstrap</span>
-                <span class="badge-tech">SQLite/MySQL</span>
+            <div class="project__footer">
+              <div class="pill-list">
+                <span class="pill">Django</span>
+                <span class="pill">HTML</span>
+                <span class="pill">CSS</span>
+                <span class="pill">SQLite/MySQL</span>
               </div>
-              <a href="#" class="small text-decoration-none text-info">
-                View Code <i class="bi bi-arrow-up-right ms-1"></i>
+              <a href="https://github.com/senthur1606/doto" class="project__link">View Code <i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__header">
+              <h3>Expense Tracker App</h3>
+              <span class="project__tag">Web · Finance</span>
+            </div>
+            <p class="project__text">
+              A simple expense tracking web app where users can add, edit, and delete daily expenses,
+              categorize them, and view total spending over time.
+            </p>
+            <ul class="project__list">
+              <li>Built CRUD operations for managing expenses with date, amount, and category.</li>
+              <li>Stored data in a database for persistent expense history.</li>
+              <li>Created a clean UI to filter expenses by date and category.</li>
+            </ul>
+            <div class="project__footer">
+              <div class="pill-list">
+                <span class="pill">Python</span>
+                <span class="pill">Django</span>
+                           <span class="pill">HTML &amp; CSS</span>
+                <span class="pill">SQLite</span>
+             </div>
+              <a href="https://github.com/senthur1606/expense_tracker" class="project__link">
+                View Code <i class="fas fa-arrow-up-right-from-square"></i>
               </a>
             </div>
-          </div>
+          </article>
+
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Resume -->
-  <section id="resume" class="section-bg">
-    <div class="container text-center">
-      <p class="section-subtitle">Resume</p>
-      <h2 class="section-title mb-3">Download my resume</h2>
-      <p class="mb-4 text-muted">
-        Get a detailed view of my education, skills, and project experience.
-      </p>
-      <a
-        href="assets/pdf/Senthur_Pandian_Resume.pdf"
-        target="_blank"
-        class="btn btn-primary-custom"
-      >
-        <i class="bi bi-file-earmark-arrow-down me-2"></i>Download Resume
-      </a>
-    </div>
-  </section>
+    <!-- ===== RESUME ===== -->
+    <section class="section section--alt" id="resume">
+      <div class="container resume__container">
+        <div class="section__header section__header--center">
+          <p class="section__subtitle">Resume</p>
+          <h2 class="section__title">Download my resume</h2>
+        </div>
+        <p class="resume__text">
+          Get a detailed view of my education, skills, and project experience.
+        </p>
+        <a href="assets/pdf/Senthur_Pandian_Resume.pdf" target="_blank" class="btn btn--primary">
+          <i class="far fa-file-pdf"></i> Download Resume
+        </a>
+      </div>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <p class="section-subtitle">Contact</p>
-      <h2 class="section-title mb-4">Let’s connect</h2>
-      <div class="row gy-4">
-        <div class="col-lg-6">
-          <div class="contact-card p-4 h-100">
-            <h5 class="mb-3">Want to work together?</h5>
-            <p class="small mb-3 text-muted">
-              I’m open to opportunities as a Python / Django Developer, Software Developer,
-              or related roles. Feel free to reach out for internships, full-time roles, or
-              freelance collaborations.
-            </p>
-            <ul class="list-unstyled small mb-0">
-              <li class="mb-2">
-                <i class="bi bi-envelope me-2"></i>
-                <a href="mailto:skpandian8@gmail.com" class="text-decoration-none text-light">
-                  skpandian8@gmail.com
-                </a>
-              </li>
-              <li class="mb-2">
-                <i class="bi bi-telephone me-2"></i> +91-6383722362
-              </li>
-              <li class="mb-2">
-                <i class="bi bi-linkedin me-2"></i>
-                <a
-                  href="https://linkedin.com/in/senthurpandian1510"
-                  target="_blank"
-                  class="text-decoration-none text-light"
-                >
-                  linkedin.com/in/senthurpandian1510
-                </a>
-              </li>
-              <li>
-                <i class="bi bi-github me-2"></i>
-                <a
-                  href="https://github.com/senthur1606"
-                  target="_blank"
-                  class="text-decoration-none text-light"
-                >
-                  github.com/senthur1606
-                </a>
-              </li>
-            </ul>
-          </div>
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__subtitle">Contact</p>
+          <h2 class="section__title">Let’s connect</h2>
         </div>
 
-        <div class="col-lg-6">
-          <div class="contact-card p-4 h-100">
-            <h5 class="mb-3">Quick message</h5>
-            <form>
-              <div class="mb-3">
-                <label class="form-label small">Name</label>
-                <input type="text" class="form-control" placeholder="Your name" />
-              </div>
-              <div class="mb-3">
-                <label class="form-label small">Email</label>
-                <input type="email" class="form-control" placeholder="your@email.com" />
-              </div>
-              <div class="mb-3">
-                <label class="form-label small">Message</label>
-                <textarea class="form-control" rows="4" placeholder="Say hi or tell me about a project"></textarea>
-              </div>
-              <button type="button" class="btn btn-primary-custom w-100">
-                Send Message (UI Only)
-              </button>
-              <p class="small text-muted mt-2 mb-0">
+        <div class="contact__grid">
+          <div class="card">
+            <h3 class="card__label">Want to work together?</h3>
+            <p class="card__text">
+              I’m open to opportunities as a Python / Django Developer, Software Developer,
+              or related roles. Feel free to reach out for internships, full-time roles
+            </p>
+            <ul class="contact__info">
+              <li><i class="far fa-envelope"></i><a href="mailto:skpandian8@gmail.com">skpandian8@gmail.com</a></li>
+              <li><i class="fas fa-phone"></i>+91-6383722362</li>
+              <li><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/senthurpandian1510" target="_blank">linkedin.com/in/senthurpandian1510</a></li>
+              <li><i class="fab fa-github"></i><a href="https://github.com/senthur1606" target="_blank">github.com/senthur1606</a></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="card__label">Quick message</h3>
+            <!-- UI only form -->
+            <form class="contact__form" onsubmit="event.preventDefault(); alert('Thanks for your message!');">
+              <label class="form__label">
+                Name
+                <input type="text" class="form__input" placeholder="Your name" required />
+              </label>
+              <label class="form__label">
+                Email
+                <input type="email" class="form__input" placeholder="your@email.com" required />
+              </label>
+              <label class="form__label">
+                Message
+                <textarea rows="4" class="form__input" placeholder="Say hi or tell me about a project" required></textarea>
+              </label>
+              <button type="submit" class="btn btn--primary btn--full">Send Message (UI Only)</button>
+              <p class="form__note">
                 This form is currently for UI demo only. You can contact me via email or LinkedIn.
               </p>
             </form>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Footer -->
-  <footer class="text-center">
-    <div class="container">
-      <span>
-        © <span id="year"></span> Senthur Pandian. Built with Bootstrap & custom CSS.
-      </span>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Senthur Pandian. Built with HTML, CSS &amp; JS.</span>
+      <a href="#home" class="footer__top">Back to top ↑</a>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Custom JS -->
   <script src="assets/js/script.js"></script>
 </body>
 </html>
