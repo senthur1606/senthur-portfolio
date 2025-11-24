@@ -32,7 +32,7 @@
         <li><a href="#home" class="nav__link active">Home</a></li>
         <li><a href="#about" class="nav__link">About</a></li>
         <li><a href="#skills" class="nav__link">Skills</a></li>
-        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#experience" class="nav__link">Education | Experience</a></li>
         <li><a href="#projects" class="nav__link">Projects</a></li>
         <li><a href="#resume" class="nav__link">Resume</a></li>
         <li><a href="#contact" class="nav__link">Contact</a></li>
@@ -42,7 +42,7 @@
 
   <main>
     <!-- ===== HERO ===== -->
-    <section class="section hero" id="home">
+    <section class="section hero reveal" id="home">
       <div class="container hero__container">
         <div class="hero__content">
           <p class="section__subtitle">Software Developer</p>
@@ -90,7 +90,7 @@
     </section>
 
     <!-- ===== ABOUT ===== -->
-    <section class="section section--alt" id="about">
+    <section class="section section--alt reveal" id="about">
       <div class="container">
         <div class="section__header">
           <p class="section__subtitle">About</p>
@@ -140,7 +140,7 @@
     </section>
 
     <!-- ===== SKILLS ===== -->
-    <section class="section" id="skills">
+    <section class="section reveal" id="skills">
       <div class="container">
         <div class="section__header">
           <p class="section__subtitle">Skills</p>
@@ -179,7 +179,7 @@
     </section>
 
     <!-- ===== EXPERIENCE ===== -->
-    <section class="section section--alt" id="experience">
+    <section class="section section--alt reveal" id="experience">
       <div class="container">
         <div class="section__header">
           <p class="section__subtitle">Experience &amp; Education</p>
@@ -226,7 +226,7 @@
     </section>
 
     <!-- ===== PROJECTS ===== -->
-    <section class="section" id="projects">
+    <section class="section reveal" id="projects">
       <div class="container">
         <div class="section__header">
           <p class="section__subtitle">Projects</p>
@@ -316,7 +316,7 @@
     </section>
 
     <!-- ===== RESUME ===== -->
-    <section class="section section--alt" id="resume">
+    <section class="section section--alt reveal" id="resume">
       <div class="container resume__container">
         <div class="section__header section__header--center">
           <p class="section__subtitle">Resume</p>
@@ -332,7 +332,7 @@
     </section>
 
     <!-- ===== CONTACT ===== -->
-    <section class="section" id="contact">
+    <section class="section reveal" id="contact">
       <div class="container">
         <div class="section__header">
           <p class="section__subtitle">Contact</p>
@@ -357,24 +357,29 @@
           <div class="card">
             <h3 class="card__label">Quick message</h3>
             <!-- UI only form -->
-            <form class="contact__form" onsubmit="event.preventDefault(); alert('Thanks for your message!');">
-              <label class="form__label">
-                Name
-                <input type="text" class="form__input" placeholder="Your name" required />
-              </label>
-              <label class="form__label">
-                Email
-                <input type="email" class="form__input" placeholder="your@email.com" required />
-              </label>
-              <label class="form__label">
-                Message
-                <textarea rows="4" class="form__input" placeholder="Say hi or tell me about a project" required></textarea>
-              </label>
-              <button type="submit" class="btn btn--primary btn--full">Send Message (UI Only)</button>
-              <p class="form__note">
-                This form is currently for UI demo only. You can contact me via email or LinkedIn.
-              </p>
-            </form>
+          <form id="contact-form" class="contact__form" action="https://formspree.io/f/xovzvjyp" method="POST">
+           <label class="form__label">
+            Name
+             <input type="text" class="form__input" name="name" placeholder="Your name" required />
+           </label>
+         
+           <label class="form__label">
+             Email
+             <input type="email" class="form__input" name="email" placeholder="your@email.com" required />
+           </label>
+         
+           <label class="form__label">
+             Message
+             <textarea rows="4" class="form__input" name="message" placeholder="Say hi or tell me about a project" required></textarea>
+           </label>
+         
+           <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+           <p class="form__note" id="form-status">
+             This message will be sent directly to my email.
+           </p>
+         </form>
+
+
           </div>
         </div>
       </div>
