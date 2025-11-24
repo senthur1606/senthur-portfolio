@@ -19,10 +19,13 @@
 
 html {
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   margin: 0;
+  padding: 0;
   font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background: radial-gradient(circle at top, #1e293b 0, #020617 40%, #000 100%);
   color: var(--text);
@@ -342,12 +345,20 @@ body {
   letter-spacing: 0.14em;
   color: var(--muted);
   margin: 0 0 0.4rem;
+  text-align: center;
 }
 
 .card__text {
   margin: 0;
   font-size: 0.9rem;
 }
+
+.form__note {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
 
 /* Skills */
 
@@ -402,14 +413,16 @@ body {
 
 .timeline__dot {
   position: absolute;
-  left: -0.78rem;
-  top: 0.2rem;
-  width: 11px;
-  height: 11px;
+  left: -0.75rem;           
+  top: 0.45rem;            
+  width: 8px;
+  height: 8px;
   border-radius: 999px;
   background: var(--accent);
-  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 0 4px rgba(99, 102, 241, 0.4); 
 }
+
+
 
 .timeline__role {
   margin: 0;
@@ -589,7 +602,8 @@ body {
 
 .footer {
   border-top: 1px solid rgba(148, 163, 184, 0.4);
-  padding: 1.4rem 0 1.8rem;
+  margin: 0;
+  padding: 1.4rem 0 ;
   font-size: 0.85rem;
   color: var(--muted);
 }
