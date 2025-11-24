@@ -44,7 +44,7 @@ if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
 
-// === Scroll reveal: only when scrolling DOWN, repeatable ===
+// Scroll reveal when scrolling down only
 const revealSections = document.querySelectorAll(".reveal");
 
 let lastScrollY = window.pageYOffset;
