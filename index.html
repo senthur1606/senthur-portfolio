@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Senthur Pandian | Software Developer</title>
+  <title>Senthur-portfolio</title>
   <!-- CSS File -->
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -13,7 +13,8 @@
   <header class="header" id="top">
     <nav class="nav container">
       <div class="nav__logo">
-        <span>Senthur&nbsp;Pandian</span>
+        <img src="assets/img/title_img.png" class="logo-img"alt="logo_image">
+        <span class="header-highlight">Portfolio</span>
       </div>
 
       <button class="nav__toggle" id="nav-toggle" aria-label="Menu">
@@ -26,7 +27,6 @@
         <li><a href="#skills" class="nav__link">Skills</a></li>
         <li><a href="#experience" class="nav__link">Education | Experience</a></li>
         <li><a href="#projects" class="nav__link">Projects</a></li>
-        <li><a href="#resume" class="nav__link">Resume</a></li>
         <li><a href="#contact" class="nav__link">Contact</a></li>
       </ul>
     </nav>
@@ -55,9 +55,7 @@
           </div>
 
           <div class="hero__actions">
-            <a href="#projects" class="btn btn--primary">
-              View Projects 
-            </a>
+            <a href="assets/pdf/Senthur_resume_.pdf" target="_blank" class="btn btn--primary"><i class="far fa-file-pdf"></i> Download CV</a>
             <a href="#contact" class="btn btn--outline">
               Contact Me 
             </a>
@@ -65,19 +63,21 @@
         </div>
 
         <div class="hero__card">
-          <img src="assets/img/IMG20250706033846_BURST000_COVER.jpg" alt="Profile" class="hero__avatar" />
+          <img src="assets/img/Senthur_pic.jpg" alt="Profile" class="hero__avatar" />
           <p class="snapshot-title">SNAPSHOT</p>
           <ul class="snapshot__list">
             <li>B.E CSE – PSN College of engineering & Technology</li>
             <li>Machine Learning Intern – Gradwin IT (Nov 2024 – Feb 2025)</li>
             <li>Based in Tenkasi, India</li>
-            <li>1st Prize – Engineer’s Day Quiz</li>
-            <li>
-              <i class="fas fa-link"></i>
-              <a href="https://github.com/senthur1606" target="_blank">github.com/senthur1606</a>
-            </li>
+            <li>Open to relocation</li>
           </ul>
+          <div class="social-links">
+            <a href="https://github.com/senthur1606" target="_blank"><img src="assets/img/github.svg"></a>
+            <a href="https://www.linkedin.com/in/senthurpandian1510/" target="_blank"><img src="assets/img/linkedin.svg"></a>
+            <a href="https://www.instagram.com/_mr_blackzz_/" target="_blank"><img src="assets/img/instagram.svg"></a>
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -97,18 +97,18 @@
             </p>
        
             <p>
-             I have worked on small but useful projects such as a ToDo application,
-             an Expense Tracker, and this personal portfolio website—all built with
-             clean and responsive UI using HTML, CSS, and JavaScript. These projects
-             helped me improve my frontend skills while also strengthening my logical
-             thinking and workflow structuring.
+              I have worked on small but useful projects such as a ToDo application,
+              an Expense Tracker using python with django interface UI used Bootstrap, and this personal portfolio website—all built with
+              clean and responsive UI using HTML, CSS, and JavaScript. These projects
+              helped me improve my frontend skills and backend logics while also strengthening my logical
+              thinking and workflow structuring.
             </p>
 
             <p>
-             Right now, I’m looking for an opportunity as a Python/Django Developer
-             or Front-End Developer (HTML, CSS, JavaScript), where I can contribute to
-             real projects, learn from experienced teammates, and build meaningful and
-             user-friendly products.
+              Right now, I’m looking for an opportunity as a Python/Django Developer
+              or Front-End Developer (HTML, CSS, JavaScript), where I can contribute to
+              real projects, learn from experienced teammates, and build meaningful and
+              user-friendly products.
             </p>
           </div>
 
@@ -123,7 +123,7 @@
             </article>
             <article class="card">
               <p class="card__label">Languages</p>
-              <p class="card__text">Tamil, English</p>
+              <p class="card__text">Tamil <br /> English</p>
             </article>
             <article class="card">
               <p class="card__label">Soft Skills</p>
@@ -134,44 +134,55 @@
       </div>
     </section>
 
-    <!-- ===== SKILLS ===== -->
-    <section class="section reveal" id="skills">
-      <div class="container">
-        <div class="section__header">
-          <p class="section__subtitle">Skills</p>
-          <h2 class="section__title">Tech stack &amp; tools</h2>
-        </div>
+    <!-- TECH SKILLS SECTION -->
+<section id="skills" class="tech-skills-section">
+  <div class="container">
+    <h2 class="section-title">Tech stack &amp; tools</h2>
 
-        <div class="skills__grid">
-          <div class="card">
-            <p class="card__label">Programming</p>
-            <div class="pill-list">
-              <span class="pill">Python</span>
-              <span class="pill">Object-Oriented Programming</span>
-              <span class="pill">Problem Solving</span>
-            </div>
-          </div>
-          <div class="card">
-            <p class="card__label">Web &amp; Backend</p>
-            <div class="pill-list">
-              <span class="pill">Django</span>
-              <span class="pill">HTML5</span>
-              <span class="pill">CSS3</span>
-              <span class="pill">JavaScript</span>
-              <span class="pill">React js(basics)</span>
-            </div>
-          </div>
-          <div class="card">
-            <p class="card__label">Database &amp; Tools</p>
-            <div class="pill-list">
-              <span class="pill">SQL</span>
-              <span class="pill">GitHub</span>
-              <span class="pill">VS Code</span>
-            </div>
-          </div>
-        </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="assets/icon/python.png" alt="Python" />
+        <p>Python</p>
       </div>
-    </section>
+
+      <div class="skill-card">
+        <img src="assets/icon/django.png" alt="Django" />
+        <p>Django</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/icon/html.png" alt="HTML" />
+        <p>HTML</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/icon/css.png" alt="CSS" />
+        <p>CSS</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/icon/js.png" alt="JavaScript" />
+        <p>JavaScript</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/icon/react.png" alt="React" />
+        <p>React</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/icon/sql.png" alt="SQL" />
+        <p>SQL</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/icon/github.png" alt="GitHub" />
+        <p>GitHub</p>
+      </div>
+
+  </div>
+</section>
+
 
     <!-- ===== EXPERIENCE ===== -->
     <section class="section section--alt reveal" id="experience">
@@ -203,7 +214,7 @@
               <h4 class="timeline__role">B.E – Computer Science &amp; Engineering</h4>
               <p class="timeline__meta">PSN College of Engineering &amp; Technology · 2021 – 2025</p>
               <p class="timeline__text">
-                CGPA: 7.0 · Worked on ML and web projects, participated in tech events and coding activities.
+                CGPA: 7.0 · Worked on python and web projects, participated coding activities.
               </p>
             </div>
 
@@ -309,20 +320,6 @@
              </div>
            </article>
         </div>
-      </div>
-    </section>
-
-    <!-- ===== RESUME ===== -->
-    <section class="section section--alt reveal" id="resume">
-      <div class="container resume__container">
-        <div class="section__header section__header--center">
-          <p class="section__subtitle">Resume</p>
-          <h2 class="section__title">Download my resume</h2>
-        </div>
-        <p class="resume__text">
-          Get a detailed view of my education, skills, and project experience.
-        </p>
-        <a href="assets/pdf/Senthur_Pandian_Resume.pdf" target="_blank" class="btn btn--primary"><i class="far fa-file-pdf"></i> Download Resume</a>
       </div>
     </section>
 
