@@ -44,18 +44,8 @@ if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
 
-// Scroll reveal when scrolling down only
+// 🔥 Scroll reveal (for .reval sections)
 const revealSections = document.querySelectorAll(".reveal");
-
-let lastScrollY = window.pageYOffset;
-let scrollDirection = "down";
-
-// detect scroll direction
-window.addEventListener("scroll", () => {
-  const currentY = window.pageYOffset;
-  scrollDirection = currentY > lastScrollY ? "down" : "up";
-  lastScrollY = currentY;
-});
 
 const revealObserver = new IntersectionObserver(
   (entries) => {
@@ -63,47 +53,30 @@ const revealObserver = new IntersectionObserver(
       const section = entry.target;
       const children = section.querySelectorAll("*");
 
-      // if section left viewport completely while scrolling UP → reset
-      if (!entry.isIntersecting && scrollDirection === "up") {
+      if (entry.isIntersecting) {
+        // in viewport → show with animation
+        section.classList.add("visible");
+        children.forEach((child, index) => {
+          child.classList.add("visible-child");
+          child.style.transitionDelay = `${index * 0.05}s`;
+        });
+      } else {
+        // out of viewport → reset so it can animate again later
         section.classList.remove("visible");
         children.forEach((child) => {
           child.classList.remove("visible-child");
           child.style.transitionDelay = "";
         });
-        return;
-      }
-
-      // only animate when entering while scrolling DOWN
-      if (entry.isIntersecting && scrollDirection === "down") {
-        section.classList.add("visible");
-
-        children.forEach((child, index) => {
-          child.classList.add("visible-child");
-          child.style.transitionDelay = `${index * 0.05}s`;
-        });
       }
     });
   },
   {
-    threshold: 0.2, // 20% of section visible
+    threshold: 0.2, // 20% visible
   }
 );
 
-// observe each reveal section
+// observe each .reval section
 revealSections.forEach((section) => revealObserver.observe(section));
-
-// make first section (home) visible on load
-window.addEventListener("load", () => {
-  const first = document.querySelector(".reveal#home") || document.querySelector(".reveal");
-  if (!first) return;
-
-  const children = first.querySelectorAll("*");
-  first.classList.add("visible");
-  children.forEach((child, index) => {
-    child.classList.add("visible-child");
-    child.style.transitionDelay = `${index * 0.05}s`;
-  });
-});
 
 // Contact form -> send to Formspree & clear after submit 
 const contactForm = document.getElementById("contact-form");
