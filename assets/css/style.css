@@ -352,6 +352,7 @@ body {
   text-align: center;
 }
 
+
 .form__note {
     text-align: center;
     width: 100%;
@@ -572,6 +573,27 @@ body {
   align-items: center;
   gap: 1rem;
 }
+
+.demo-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #76a9ff; 
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.25s ease;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: #c7d2fe;
+}
+
+.demo-btn:hover{
+  color: #0963eb; 
+  transform: translateY(-1px);
+}
+
+
 
 .project__link {
   font-size: 0.85rem;
